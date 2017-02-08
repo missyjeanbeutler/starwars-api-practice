@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='mainApp'>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="reset.css" rel="stylesheet">        
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body ng-controller="MainCtrl">
+
+        <div>
+            <button ng-click='showInfo(12)'>X-Wing</button>
+            <button ng-click='showInfo(3)'>Star Destroyer</button>
+            <button ng-click='showInfo(10)'>Millennium Falcon</button>
+            <button ng-click='showInfo(13)'>TIE Fighter</button>
+        </div>
+
+        <div>
+            
+            <h1>{{ships.name}}</h1>
+            <p>{{ships.length}}</p>
+            <p>{{ships.cost_in_credits}}</p>
+            <p>{{ships.hyperdrive_rating}}</p>
+        </div>
+        <div>
+
+
+        </div>
+        
+    
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+    </body>
+</html>
