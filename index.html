@@ -9,24 +9,24 @@
     </head>
     <body ng-controller="MainCtrl">
 
-        <div>
-            <button ng-click='showInfo(12)'>X-Wing</button>
-            <button ng-click='showInfo(3)'>Star Destroyer</button>
-            <button ng-click='showInfo(10)'>Millennium Falcon</button>
-            <button ng-click='showInfo(13)'>TIE Fighter</button>
+        <div class="shipContainer">
+            <div class="shipPic"><img ng-src="{{imageSRC}}" alt="TIE Fighter"></div>   
         </div>
 
-        <div>
-            
-            <h1>{{ships.name}}</h1>
-            <p>{{ships.length}}</p>
-            <p>{{ships.cost_in_credits}}</p>
-            <p>{{ships.hyperdrive_rating}}</p>
+        <div class="shipDetails"> 
+            <p class="name">Name: {{ships.name}}</p>
+            <p class="length">Length: {{ships.length}} meters</p>
+            <p class="cost">Cost in credits: {{ships.cost_in_credits}}</p>
+            <p class="hyper">Hyperdrive rating: {{ships.hyperdrive_rating}}</p>
         </div>
-        <div>
 
-
+        <div class="buttons">
+            <div class="button" ng-click='showInfo(12)'>X-Wing</div>
+            <div class="button" ng-click='showInfo(3)'>Star Destroyer</div>
+            <div class="button" ng-click='showInfo(10)'>Millennium Falcon</div>
+            <div class="button" ng-click='showInfo(13)'>TIE Fighter</div>
         </div>
+        
         
     
 

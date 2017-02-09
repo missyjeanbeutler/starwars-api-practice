@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,700');
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.shipContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shipPic {
+    height: 80vh;
+    width: 90%;
+    background: blue;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}

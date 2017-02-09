@@ -5,6 +5,7 @@ this.showInfo = function(shipNum){
         url: 'http://swapi.co/api/starships/' + shipNum,
         method: 'GET'
     });
+    
 }
 
 
